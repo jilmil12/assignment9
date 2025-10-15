@@ -1,0 +1,92 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator-container {
+  text-align: center;
+}
+
+h1 {
+  color: #ff85a1;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px #ffd6e0;
+}
+
+.calculator {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(255, 130, 160, 0.3);
+  padding: 25px;
+  width: 320px;
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 1.6rem;
+  text-align: right;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background: #ffe6ec;
+  color: #444;
+  outline: none;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.btn {
+  background: #ffd6e0;
+  border: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: #444;
+  box-shadow: 0 3px 5px rgba(255, 130, 160, 0.2);
+}
+
+.btn:hover {
+  background: #ffb6c1;
+  transform: translateY(-2px);
+}
+
+.operator {
+  background: #ffc2d4;
+}
+
+.clear {
+  background: #fcbad3;
+}
+
+.del {
+  background: #fcbad3;
+}
+
+.equal {
+  background: #ff85a1;
+  color: white;
+  grid-row: span 2;
+}
+
+.equal:hover {
+  background: #ff5e85;
+}
+
+.zero {
+  grid-column: span 2;
+}
